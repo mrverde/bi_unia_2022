@@ -198,10 +198,16 @@ Muestra el historial de versiones en la rama activa.
 
     $ git stash
 
-Muestra el historial de versiones en la rama activa.
+Guarda de forma temporal las modificaciones de archivo.
 
+    $ git stash pop
 
-Git pull, git push, git commit -m "Mensaje del GIT", git fetch, git stash, git pop, git status, git diff
+Recupera los archivos del stash.
+
+    $ git stash drop
+
+Elimina los archivos del stash.
+
 
 ## __6) Git branches__
 
