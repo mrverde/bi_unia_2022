@@ -84,7 +84,63 @@ Para ver la ayuda de un comando podemos usar:
 
     $ git push --help
 
+Para iniciar un repositorio en una carpeta determinada usaremos el comando
+
+    $ git init
+
+Este comando crea un subdirectorio denominado .git donde se guardarán todos los archivos. 
+
+Para añadir que archivos se van a controlar y añadirse a staging se usa el comando:
+
+    git add *
+
+Este comando añade todos los archivos del directorio. Podremos especificar cuales de ellos en concreto queremos añadir de la siguiente forma:
+
+    git add graficos/resumen.md
+
+Para confirmar los cambios utilizamos el comando:
+
+    $ git commit -m "Mi primer commit"
+
+Lo que viene a partir de la -m es el nombre que tendrá nuestro commit.
+
 ## __3) Repositorios online: GITHub, Azure, Gitlab, Bitbucket...__
+
+Lo interesante de los repositorios es que pueden ser subidos a diferentes plataformas de internet donde los usuarios pueden consultarlos.
+
+De este tipo la plataforma más usada es GitHub.
+
+![Perfil GitHub](/GIT/recursos/003_perfil_github.png)
+
+En GitHub podemos crear repositorios, si son públicos consultarlos, subir modificaciones, issues, pull request, crear un fork, etc.
+
+Para crear un repositorio en primer lugar nos logamos, vamos al apartado repositorio y pulsamos en el botón verde new.
+
+![Nuevo repo](/GIT/recursos/004_nuevo_repo.png)
+
+Nos aparecerá la pantalla de creación de repositorio
+
+![Crear repo](/GIT/recursos/005_crear_repo.png)
+
+En esta pantalla escogeremos el nombre del repositorio, el propietario, podremos añadir una descripción, seleccionar si es un repositorio público o privado y seleccionar si queremos añadir un archivo readme, un .gitignore y la licencia del repositorio. 
+
+Para crear el repositorio pinchamos en el botón verde crear repositorio y nos aparecerá la pantalla de repositorio nuevo:
+
+![Nuevo repo](/GIT/recursos/006_pagina_base_repo.png)
+
+Aquí nos aparecen diferentes opciones básicas para crear nuestro repositorio en nuestro disco duro en función de si ya existe o no.
+
+#### Clonar repositorio
+
+Podemos descargarnos el repositorio yendo al mismo y pinchando en el botón verde <> Code
+
+![Clonar repo](/GIT/recursos/007_clone_repository.png)
+
+Ahí aparecen diferentes opciones. HTTPS y SSH son diferentes maneras de autenticación. Debemos copiar la dirección web que nos aparece y ejecutarla en consola con la instrucción clone de la siguiente forma:
+
+    $ git clone https://github.com/mrverde/bi_unia_2022.git
+
+-----
 
 Que son, como se muestra un repositorio, cómo copio un repositorio, cómo me copio un repositorio. Archivos de interés en un repositorio (gitignore, readme.md...)
 
