@@ -140,18 +140,68 @@ Ahí aparecen diferentes opciones. HTTPS y SSH son diferentes maneras de autenti
 
     $ git clone https://github.com/mrverde/bi_unia_2022.git
 
------
-
-Que son, como se muestra un repositorio, cómo copio un repositorio, cómo me copio un repositorio. Archivos de interés en un repositorio (gitignore, readme.md...)
-
-Abrir una cuenta en GitHub.
-
 ## __4) VSCode - Extensiones interesantes que instalar: gitlens y git graph__
 
+Visual Studio Code es un IDE desarrollado por Microsoft que puede usarse en Windows, Linux, macOS y web. Tiene integradas muchísimas funciones: control de git, resaltado de sintaxis, atajos...
+
+Es un editor muy completo que además nos permite instalar extensiones que nos permitirán trabajar con diferentes lenguajes de programación y nos facilitarán la integración con servicios, resaltado de sintaxis, creación de snippets, autocompletado de código, depuración, etc.
+
+Podremos descargar visual studio code desde su web https://code.visualstudio.com/
+
+Para trabajar con GitHub se recomienda la instalación de las extensiones [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) y [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens).
 
 ## __5) Trabajando con GIT: Comandos básicos__
 
-Git pull, git push, git commit -m "Mensaje del GIT"
+    $ git pull
+
+Descarga los últimos cambios del repositorio.
+
+    $ git add nombre_del_archivo.txt
+
+Añade los archivos especificados a staging. Añade todas las modificaciones si en vez de un nombre de archivo ponemos .
+
+    $ git commit -m "Mensaje git"
+
+Guarda permanentemente los cambios existentes en el staging.
+
+    $ git push
+
+Envía los cambios realizados al repositorio
+
+    $ git diff
+
+Muestra las diferencias en el archivo que no ha sido metido en staged.
+
+    $ git diff -staged
+
+Muestra las diferencias entre el contenido del archivo que hay en staged y la última versión.
+
+    $ git reset 73bbca4299432978a
+
+Deshace los commits hechos después del commit especificado y preserva los cambios locales.
+
+    $ git reset --hard 73bbca4299432978a
+
+Descarta todos los cambios realizados y va al commit especificado.
+
+    $ git status
+
+Lista todos los archivos que pueden ser comiteados.
+
+    $ git rm archivo.txt
+
+Elimina un archivo del directorio de trabajo y guarda el borrado en el staging.
+
+    $ git log
+
+Muestra el historial de versiones en la rama activa.
+
+    $ git stash
+
+Muestra el historial de versiones en la rama activa.
+
+
+Git pull, git push, git commit -m "Mensaje del GIT", git fetch, git stash, git pop, git status, git diff
 
 ## __6) Git branches__
 
@@ -173,3 +223,7 @@ Crear una cuenta en GitHub para la asignatura. Copiar la base del repositorio de
 * https://git-scm.com/book/es/v2
 
 * https://es.wikipedia.org/wiki/Git
+
+* https://www.youtube.com/watch?v=PW_A-lOpVV0
+
+* https://www.youtube.com/watch?v=VdGzPZ31ts8
