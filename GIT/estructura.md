@@ -211,18 +211,73 @@ Elimina los archivos del stash.
 
 ## __6) Git branches__
 
-Qué es una rama, cómo se crea, Merges y conflictos. Borrar ramas. Flujo de trabajo normal en una empresa.
+Una rama es una división en un camino de desarrollo diferente y paralelo de la evolución del código. Se usa para por ejemplo añadir nuevas funcionalidades, probar nuevos elementos, arreglar un error, etc. 
+
+Cuando se trabaja dentro de un equipo de muchas personas son fundamentales, pues de esta manera pueden trabajar múltiples personas de forma concurrente en la evolución de un mismo código informático.
+
+La forma de trabajar es la siguiente: 
+
+Existe una rama principal denominada master, main, etc. Entonces, cada desarrollador suele crear una rama donde implementará las funcionalidades que tiene asignadas. Una vez haya acabado el desarrollo, los cambios realizados se implementan en la rama principal y la rama usada para los cambios se borra.
+
+    $ git branch
+
+Lista todas las ramas existentes
+
+    $ git branch mi_nueva_rama
+
+Crea una nueva rama
+
+    $ git checkout mi_nueva_rama
+
+Para cambiar de rama
+
+    $ git checkout -b mi_otra_nueva_rama
+
+Crea una nueva rama y automáticamente cambia a ella
+
+    $ git branch -d mi_nueva_rama
+
+Para borrar la rama
+
+    $ git merge mi_otra_nueva_rama
+
+Para unificar la rama especificada en la rama activa
+
+En la unificación puede ocurrir que un mismo fragmento de código haya cambiado en las dos ramas a la vez. En este caso se produce lo que se denomina un conflicto. En este caso los cambios no se hacen automáticamente y GIT preguntará al usuario como ha de actuar: quedándose con el contenido de la rama activa, con el de la rama a unificar o dándole al usuario la oportunidad de reescribir el código.
 
 ## __7) Back to the Future__
 
-Cómo volver a un commit anterior, git pop
+GIT nos permite también volver a cualquier commit que hayamos hecho. Podremos a su ver crear una nueva rama a partir del mismo.
 
+    $ git checkout 2c77009f223affb0fa60132cf79d66c4785d0363
 
-## __8) Reflexiones: Portfolio, ver evolucionar el código y lo que sabemos hacer__
+Cambia la rama activa al commit seleccionado
 
-Ejercicio
+## __8) Ejercicios__
 
-Crear una cuenta en GitHub para la asignatura. Copiar la base del repositorio de pandas del ejercicio del día siguiente.
+1. Crear una cuenta en GitHub y crear un repositorio llamado mecofin_2023_fundamentos_bi
+
+2. Crear un archivo README.md donde pondréis los comandos utilizados en el ejercicio
+
+3. Hacer un commit con los cambios
+
+4. Crear un archivo llamado documento_privado.md y una carpeta denominada carpeta_privada.md y hacer que sean ignorados por GIT. 
+
+5. Crear un archivo denominado fichero1.txt y añadirle texto.
+
+6. Hacer un commit con los cambios.
+
+7. Crear una nueva rama denominada nueva_rama
+
+8. Crear un nuevo archivo denominado fichero2.txt y añadirle texto.
+
+9. Mergear nueva_rama a master
+
+10. En la rama nueva_rama, cambiar el contenido de fichero2.txt y volver a mergearlo a master
+
+11. Borrar la rama nueva_rama
+
+12. Crear un nuevo equipo denominado mecofin_2023 y añadir a todos los compañeros de clase.
 
 ## Para saber más
 
