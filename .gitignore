@@ -1,2 +1,5 @@
 /documentacion
 /Graficos
+*.ipynb_checkpoints
+output.*
+Prueba_BI_SOLVED.ipynb
